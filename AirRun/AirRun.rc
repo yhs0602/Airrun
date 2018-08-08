@@ -1,0 +1,104 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITPLAYER             BITMAP  DISCARDABLE     "player.bmp"
+IDB_BITENEMY              BITMAP  DISCARDABLE     "enemy.bmp"
+//IDB_BITBULLET           BITMAP  DISCARDABLE     "bullet.bmp"
+IDB_BITSUR1               BITMAP  DISCARDABLE     "sur1.bmp"
+IDB_BITSUR2               BITMAP  DISCARDABLE     "sur2.bmp"
+IDB_BITSUR3               BITMAP  DISCARDABLE     "sur3.bmp"
+IDB_BITSUR4               BITMAP  DISCARDABLE     "sur4.bmp"
+IDB_BITSUR5               BITMAP  DISCARDABLE     "sur5.bmp"
+IDB_BITEXPLOSION          BITMAP  DISCARDABLE     "explosion.bmp"
+IDB_BITNUCLEAR            BITMAP  DISCARDABLE     "nuclear.bmp"
+IDB_BITCLOUD              BITMAP  DISCARDABLE     "cloud.bmp"
+IDB_BITITEM1			  BITMAP  DISCARDABLE     "item1.bmp"
+IDB_BITITEM2			  BITMAP  DISCARDABLE     "item2.bmp"
+
+IDB_BITBULLET1			  BITMAP  DISCARDABLE     "bullet1.bmp"
+IDB_BITBULLET2			  BITMAP  DISCARDABLE     "bullet2.bmp"
+IDB_BITBULLET3			  BITMAP  DISCARDABLE     "bullet3.bmp"
+IDB_BITBULLET4			  BITMAP  DISCARDABLE     "bullet4.bmp"
+IDB_BITBULLET5			  BITMAP  DISCARDABLE     "bullet5.bmp"
+IDB_BITBULLET6			  BITMAP  DISCARDABLE     "bullet6.bmp"
+IDB_BITBULLET7			  BITMAP  DISCARDABLE     "bullet7.bmp"
+IDB_BITBULLET8			  BITMAP  DISCARDABLE     "bullet8.bmp"
+IDB_BITBULLET9			  BITMAP  DISCARDABLE     "bullet9.bmp"
+IDB_BITBULLET10			  BITMAP  DISCARDABLE     "bullet10.bmp"
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+//wave
+IDR_BULLET                WAVE    DISCARDABLE     "bullet.wav"
+IDR_EXPLOSION             WAVE    DISCARDABLE     "explosion.wav"
+IDR_OUCH                  WAVE    DISCARDABLE     "ouch.wav"
+IDR_ITEM                  WAVE    DISCARDABLE     "item.wav"
+
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
