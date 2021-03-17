@@ -217,7 +217,7 @@ LRESULT CALLBACK WindowProcedure (HWND hwnd, UINT message, WPARAM wParam, LPARAM
                       return 0;
                  case 'M':
                       sound=!sound;
-                      sprintf(scoretext,"score:%d       life:%d 이동:방향키, M:소리 토글 Esc:종료 1:허경영 2.이명박 3.박근혜 4.김정은 sound:%s",score,5,sound? "true":"false");
+                      sprintf(scoretext,"score:%d       life:%d 이동:방향키, M:소리 토글 Esc:종료 1:... 2:... 3:... 4:... sound:%s",score,5,sound? "true":"false");
                       if(!sound) StopSound();
                       return 0;
                       
@@ -251,7 +251,7 @@ LRESULT CALLBACK WindowProcedure (HWND hwnd, UINT message, WPARAM wParam, LPARAM
                       
                  case '1':
                       if(sound){
-                                myPlaySound("Hu.mp3");
+                                myPlaySound("1.mp3");
                       }else{
                             StopSound();
                       }
@@ -259,21 +259,21 @@ LRESULT CALLBACK WindowProcedure (HWND hwnd, UINT message, WPARAM wParam, LPARAM
                  
                  case '2':
                       if(sound){
-                                myPlaySound("Lee.mp3");
+                                myPlaySound("2.mp3");
                       }else{
                             StopSound();
                       }
                       break;
                  case '3':
                       if(sound){
-                                myPlaySound("Park.mp3");
+                                myPlaySound("3.mp3");
                       }else{
                             StopSound();
                       }
                       break;
                  case '4':
                       if(sound){
-                                myPlaySound("Kim.mp3");
+                                myPlaySound("4.mp3");
                       }else{
                             StopSound();
                       }
@@ -445,6 +445,6 @@ void start(){
      }
        player->Init();
 
-     sprintf(scoretext,"score:%d       life:%d 이동:방향키, M:소리 Q:스텔스 Esc:종료 1:허경영 2.이명박 3.박근혜 4.김정은 sound:%s",score,5,sound? "true":"false");
+     sprintf(scoretext,"score:%d       life:%d 이동:방향키, M:소리 Q:스텔스 Esc:종료 1:...  2:... 3:... 4:... sound:%s",score,5,sound? "true":"false");
      return;
 }

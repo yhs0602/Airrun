@@ -5,7 +5,7 @@
 
 #include "AirRun.rc"
 
-A ICON MOVEABLE PURE LOADONCALL DISCARDABLE "iris.ico"
+A ICON "iris.ico"
 
 //
 // TO CHANGE VERSION INFORMATION, EDIT PROJECT OPTIONS...
@@ -16,23 +16,22 @@ PRODUCTVERSION 0,1,1,184
 FILETYPE VFT_APP
 {
   BLOCK "StringFileInfo"
-	 {
-		 BLOCK "040904E4"
-		 {
-			 VALUE "CompanyName", ""
-			 VALUE "FileVersion", ""
-			 VALUE "FileDescription", "Developed using the Dev-C++ IDE"
-			 VALUE "InternalName", ""
-			 VALUE "LegalCopyright", ""
-			 VALUE "LegalTrademarks", ""
-			 VALUE "OriginalFilename", ""
-			 VALUE "ProductName", "Iris"
-			 VALUE "ProductVersion", ""
-		 }
-	 }
+  {
+    BLOCK "040904E4"
+    {
+      VALUE "CompanyName", ""
+      VALUE "FileVersion", "0.1.1.184"
+      VALUE "FileDescription", "Developed using the Dev-C++ IDE"
+      VALUE "InternalName", ""
+      VALUE "LegalCopyright", ""
+      VALUE "LegalTrademarks", ""
+      VALUE "OriginalFilename", ""
+      VALUE "ProductName", "Iris"
+      VALUE "ProductVersion", ""
+    }
+  }
   BLOCK "VarFileInfo"
-	 {
-		 VALUE "Translation", 0x0409, 1252
-	 }
+  {
+    VALUE "Translation", 0x0409, 1252
+  }
 }
-

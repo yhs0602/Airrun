@@ -1,13 +1,13 @@
 [Editor_0]
 CursorCol=29
 CursorRow=390
-TopLine=373
+TopLine=1
 LeftChar=1
 Open=1
 Top=0
 [Editors]
-Focused=7
-Order=0,2,1,4,5,7,9,3,6,-1
+Focused=4
+Order=0,2,1,4,5,7,9,3,6
 [Editor_3]
 CursorCol=27
 CursorRow=41
