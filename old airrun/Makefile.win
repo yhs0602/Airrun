@@ -1,0 +1,48 @@
+# Project: iris
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = iris_private.res
+OBJ  = main.o enemy.o bullet.o player.o item.o world.o $(RES)
+LINKOBJ  = main.o enemy.o bullet.o player.o item.o world.o $(RES)
+LIBS =  -L"lib" -mwindows ../../../gcc/lib/libwinmm.a  
+INCS =  -I"include" 
+CXXINCS =  -I"lib/gcc/mingw32/3.4.2/include"  -I"include/c++/3.4.2/backward"  -I"include/c++/3.4.2/mingw32"  -I"include/c++/3.4.2"  -I"include" 
+BIN  = iris.exe
+CXXFLAGS = $(CXXINCS)   -fexpensive-optimizations
+CFLAGS = $(INCS)   -fexpensive-optimizations
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before iris.exe all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o "iris.exe" $(LIBS)
+
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
+
+enemy.o: enemy.cpp
+	$(CPP) -c enemy.cpp -o enemy.o $(CXXFLAGS)
+
+bullet.o: bullet.cpp
+	$(CPP) -c bullet.cpp -o bullet.o $(CXXFLAGS)
+
+player.o: player.cpp
+	$(CPP) -c player.cpp -o player.o $(CXXFLAGS)
+
+item.o: item.cpp
+	$(CPP) -c item.cpp -o item.o $(CXXFLAGS)
+
+world.o: world.cpp
+	$(CPP) -c world.cpp -o world.o $(CXXFLAGS)
+
+iris_private.res: iris_private.rc Iris.rc 
+	$(WINDRES) -i iris_private.rc --input-format=rc -o iris_private.res -O coff 
